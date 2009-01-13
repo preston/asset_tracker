@@ -1,0 +1,10 @@
+macbook:
+  name: MacBook
+  manufacturer: apple
+  kind: laptop
+
+lcd_24:
+  name: E248WFP
+  manufacturer: dell
+  kind: monitor
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Asset Tracker <%= " :: #{h(@title)}" if @title %></title>
+  <%= stylesheet_link_tag 'reset' %>
+  <%= stylesheet_link_tag 'default' %>
+</head>
+<body>
+
+<div id="everything">
+	
+	<ul id="navigation">
+		<li><%= link_to "Assets", assets_path %></li>
+		<li><%= link_to "Users", users_path %></li>
+		<li><%= link_to "Manufacturers", manufacturers_path %></li>
+		<li><%= link_to "Models", models_path %></li>
+		<li><%= link_to "Kinds", kinds_path %></li>
+		<li><%= link_to "Locations", locations_path %></li>
+	</ul>
+
+	<p id="notice"><%= flash[:notice] %></p>
+	<p id="error"><%= flash[:error] %></p>
+
+	<div id="content">
+	<%= yield  %>
+	</div>
+	
+	<div id="footer">
+		<p>Asset Tracker © <%= Time.now.year %> <a href="http://www.openrain.com">OpenRain</a>. All rights reserved.</p>
+		<p>Record asset metadata with this application for insurance purposes and operational sanity.</p>
+	</div>
+</div>
+
+</body>
+</html>

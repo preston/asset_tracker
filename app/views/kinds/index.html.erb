@@ -1,0 +1,28 @@
+<h1><%= @title = 'Kinds'%></h1>
+
+<%= link_to image_tag('/images/icons/add.png'), new_kind_path %>
+
+
+<table>
+	<thead>
+  <tr>
+	<td>Name</td>
+	<td>Models</td>
+	<td>Actions</td>
+  </tr>
+</thead>
+<tbody>
+<% for kind in @kinds %>
+  <tr>
+	<td><%= link_to h(kind.name), kind %></td>
+    <td><%= kind.models.count %></td>
+    <td>
+<%= link_to '[new model]', new_model_path %>
+<%= link_to image_tag('/images/icons/pencil.png'), edit_kind_path(kind) %>
+    <%= link_to image_tag('/images/icons/delete.png'), kind, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<br />

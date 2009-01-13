@@ -1,0 +1,15 @@
+<h1>Editing model</h1>
+
+<% form_for(@model) do |f| %>
+  <%= f.error_messages %>
+
+
+  <%= render :partial => 'fields', :locals => {:f => f} %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @model %> |
+<%= link_to 'Back', models_path %>

@@ -1,0 +1,25 @@
+<h1><%= @title = 'Manufacturers'%></h1>
+
+<%= link_to image_tag('/images/icons/add.png'), new_manufacturer_path %>
+
+<table>
+	<thead>
+  <tr>
+	<td>Name</td>
+	<td>Models</td>
+	<td>Actions</td>
+  </tr>
+</thead>
+<tbody>
+<% for manufacturer in @manufacturers %>
+  <tr>
+    <td><%= link_to h(manufacturer.name), manufacturer %></td>
+    <td><%= manufacturer.models.count %></td>
+    <td>
+<%= link_to '[new model]', new_model_path %>
+<%= link_to image_tag('/images/icons/pencil.png'), edit_manufacturer_path(manufacturer) %>
+<%= link_to image_tag('/images/icons/delete.png'), manufacturer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>

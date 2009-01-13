@@ -1,0 +1,47 @@
+<h1><%= @title = h(@model.name) %></h1>
+
+<%= link_to image_tag('/images/icons/pencil.png'), edit_model_path(@model) %>
+<%= link_to image_tag('/images/icons/delete.png'), @model, :confirm => 'Are you sure?', :method => :delete %>
+
+<table>
+	<tbody>
+	<tr>
+		<td>Manufacturer</td>
+		<td><%= h(@model.manufacturer.name) %></td>
+	</tr>
+	<tr>
+		<td>Kind</td>
+		<td><%= h(@model.kind.name) %></td>
+	</tr>
+	<tr>
+		<td>Assets</td>
+		<td><%= h(@model.assets.count) %></td>
+	</tr>
+	</tbody>
+</table>
+
+<h2>Assets</h2>
+
+<table>
+	<thead>
+  <tr>
+	<td>Login</td>
+	<td>Serial</td>
+	<td>Notes</td>
+	<td>Actions</td>
+  </tr>
+	</thead>
+<tbody>
+<% for asset in @model.assets %>
+  <tr>
+    <td><%= link_to h(asset.user.login), asset.user %></td>
+    <td><%= link_to h(asset.serial), asset %></td>
+    <td><%= link_to h(asset.notes), asset %></td>
+    <td><%= link_to image_tag('/images/icons/pencil.png'), edit_asset_path(asset) %>
+<%= link_to image_tag('/images/icons/delete.png'), asset, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+

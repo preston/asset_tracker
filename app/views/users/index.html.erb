@@ -1,0 +1,27 @@
+<h1><%= @title = 'Users'%></h1>
+
+<%= link_to image_tag('/images/icons/add.png'), new_user_path %>
+
+<table>
+	<thead>
+  <tr>
+	<td>Login</td>
+	<td>Email</td>
+	<td>Assets</td>
+	<td>Actions</td>
+  </tr>
+</thead>
+<tbody>
+<% for user in @users %>
+  <tr>
+    <td><%= link_to h(user.login), user %></td>
+    <td><%= mail_to user.email %></td>
+    <td><%= user.assets.count %></td>
+    <td>
+	<%= link_to '[new asset]', new_asset_path() %>
+	<%= link_to image_tag('/images/icons/pencil.png'), edit_user_path(user) %>
+<%= link_to image_tag('/images/icons/delete.png'), user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>

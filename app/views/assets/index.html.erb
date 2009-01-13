@@ -1,0 +1,35 @@
+<h1><%= @title = 'Assets'%></h1>
+
+<%= link_to image_tag('/images/icons/add.png'), new_asset_path %>
+
+<table>
+	<thead>
+  <tr>
+	<td>User</td>
+	<td>Manufacturer</td>
+	<td>Model</td>
+	<td>Kind</td>
+	<td>Location</td>
+	<td>Serial</td>
+	<td>Notes</td>
+	<td>Actions</td>
+  </tr>
+	</thead>
+	<tbody>
+
+<% for asset in @assets %>
+  <tr>
+	<td><%= link_to h(asset.user.login), asset.user %></td>
+    <td><%= link_to h(asset.model.manufacturer.name), asset.model.manufacturer %></td>
+    <td><%= link_to h(asset.model.name), asset.model %></td>
+  	<td><%= link_to h(asset.model.kind.name), asset.model.kind %></td>
+  	<td><%= link_to h(asset.location.name), asset.location %></td>
+    <td><%= link_to h(asset.serial), asset %></td>
+    <td><%= h(asset.notes) %></td>
+    <td><%= link_to image_tag('/images/icons/pencil.png'), edit_asset_path(asset) %>
+    <%= link_to image_tag('/images/icons/delete.png'), asset, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+
+</table>

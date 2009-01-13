@@ -1,0 +1,32 @@
+<h1><%= @title = "#{h(@asset.user.login)}'s #{h(@asset.model.manufacturer.name)} #{h(@asset.model.name)}" %></h1>
+
+<%= link_to image_tag('/images/icons/pencil.png'), edit_asset_path(@asset) %>
+<%= link_to image_tag('/images/icons/delete.png'), @asset, :confirm => 'Are you sure?', :method => :delete %>
+
+<table>
+	<tbody>
+		<tr>
+			<td>Login</td>
+			<td><%= h(@asset.user.login) %></td>
+		</tr>
+		<tr>
+			<td>Manufacturer</td>
+			<td><%= h(@asset.model.manufacturer.name) %></td>
+		</tr>
+		<tr>
+			<td>Model</td>
+			<td><%= h(@asset.model.name) %></td>
+		</tr>
+
+		<tr>
+			<td>Serial</td>
+			<td><%= h(@asset.serial) %></td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td><%= h(@asset.notes) %></td>
+		</tr>
+		
+	
+	</tbody>
+</table>

@@ -1,0 +1,13 @@
+<h1>Editing kind</h1>
+
+<% form_for(@kind) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => 'fields', :locals => {:f => f} %>
+
+  <div>
+    <%= f.submit "Update" %>
+  </div>
+<% end %>
+
+<%= link_to '[show]', @kind %>

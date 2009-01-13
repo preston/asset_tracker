@@ -1,0 +1,33 @@
+
+<div>
+	<label>User</label>
+	<%= select :asset, :user_id, User.find(:all).collect {|n| [ "#{h(n.login)} <#{h(n.email)}>", n.id ] }.sort %>
+	<%= link_to image_tag('/images/icons/add.png'), new_user_path %>
+	<%= error_message_on :asset, :user_id %>
+</div>
+
+<div>
+	<label>Model</label>
+	<%= select :asset, :model_id, Model.find(:all).collect {|n| [ "#{h n.manufacturer.name} #{h n.name}", n.id ] }.sort %>
+	<%= link_to image_tag('/images/icons/add.png'), new_model_path %>
+	<%= error_message_on :asset, :model %>
+</div>
+
+<div>
+	<label>Location</label>
+	<%= select :asset, :location_id, Location.find(:all).collect {|n| [ h(n.name), n.id ] }.sort %>
+	<%= link_to image_tag('/images/icons/add.png'), new_location_path %>
+	<%= error_message_on :asset, :location %>
+</div>
+
+<div>
+	<label>Serial</label>
+	<%= f.text_field :serial %>
+	<%= error_message_on :asset, :serial %>
+</div>
+
+<div>
+	<label>Notes</label>
+	<%= f.text_area :notes %>
+	<%= error_message_on :asset, :notes %>
+</div>

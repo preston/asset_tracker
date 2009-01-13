@@ -1,0 +1,14 @@
+development:
+  adapter: postgres
+  database: asset_tracker_development
+  hostname: localhost
+  username: asset_tracker
+  password: asset_tracker
+
+test:
+  adapter: postgres
+  database: asset_tracker_test
+  hostname: localhost
+  username: asset_tracker
+  password: asset_tracker
+

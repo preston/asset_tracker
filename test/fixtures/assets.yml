@@ -1,0 +1,13 @@
+alice_macbook:
+  user: alice
+  model: macbook
+  serial: A1O2E3U4
+  location: bullpen
+
+alice_monitor:
+  user: alice
+  model: lcd_24
+  serial: X89N3289328UCD##33
+  notes: "Is looking to upgrade."
+  location: bullpen
+

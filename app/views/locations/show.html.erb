@@ -1,0 +1,31 @@
+<h1><%= h(@location.name) %></h1>
+
+<%= link_to image_tag('/images/icons/pencil.png'), edit_location_path(@location) %>
+<%= link_to image_tag('/images/icons/delete.png'), @location, :confirm => 'Are you sure?', :method => :delete %>
+
+<h2>Assets</h2>
+
+<%= link_to image_tag('/images/icons/add.png'), new_asset_path %>
+
+<table>
+  <tr>
+	<td>Manufacturer</td>
+	<td>Model</td>
+	<td>Kind</td>
+	<td>Serial</td>
+	<td>Notes</td>
+	<td>Actions</td>
+  </tr>
+
+<% for asset in @location.assets %>
+  <tr>
+    <td><%= link_to h(asset.model.manufacturer.name), asset.model.manufacturer %></td>
+    <td><%= link_to h(asset.model.name), asset.model %></td>
+    <td><%= link_to h(asset.model.kind.name), asset.model.kind %></td>
+    <td><%= link_to h(asset.serial), asset %></td>
+    <td><%= link_to h(asset.notes), asset %></td>
+    <td><%= link_to image_tag('/images/icons/pencil.png'), edit_asset_path(asset) %>
+<%= link_to image_tag('/images/icons/delete.png'), asset, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

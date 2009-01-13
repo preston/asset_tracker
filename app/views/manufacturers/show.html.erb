@@ -1,0 +1,45 @@
+<h1><%= @title = h(@manufacturer.name) %></h1>
+
+<%= link_to image_tag('/images/icons/pencil.png'), edit_manufacturer_path(@manufacturer) %> 
+<%= link_to image_tag('/images/icons/delete.png'), @manufacturer, :confirm => 'Are you sure?', :method => :delete %>
+
+<table>
+	<tbody>
+	<tr>
+		<td>Models</td>
+		<td><%= h(@manufacturer.models.count) %></td>
+	</tr>
+	<tr>
+		<td>Created</td>
+		<td><%= h(@manufacturer.created_at) %></td>
+	</tr>
+	<tr>
+		<td>Updated</td>
+		<td><%= h(@manufacturer.updated_at) %></td>
+	</tr>
+	
+	</tbody>
+</table>
+
+
+<h2>Models</h2>
+
+<table>
+	<thead>
+  <tr>
+	<td>Name</td>
+	<td>Kind</td>
+	<td>Actions</td>
+  </tr>
+	</thead>
+<tbody>
+<% for model in @manufacturer.models %>
+  <tr>
+    <td><%= link_to h(model.name), model %></td>
+    <td><%= link_to h(model.kind.name), model.kind %></td>
+    <td><%= link_to image_tag('/images/icons/pencil.png'), edit_model_path(model) %>
+<%= link_to image_tag('/images/icons/delete.png'), model, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>

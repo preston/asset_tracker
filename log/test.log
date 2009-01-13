@@ -1,0 +1,404 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AssetsController#index (for 0.0.0.0 at 2009-01-12 16:53:04) [GET]
+Rendering assets/index
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AssetsController#new (for 0.0.0.0 at 2009-01-12 16:53:04) [GET]
+Rendering assets/new
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AssetsController#index (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  [4;35;1mAsset Load (0.3ms)[0m   [0mSELECT * FROM "assets" [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 236175557) [0m
+  [4;35;1mModel Load (0.3ms)[0m   [0mSELECT * FROM "models" WHERE ("models"."id" IN (90487597,515471361)) [0m
+  [4;36;1mManufacturer Load (0.3ms)[0m   [0;1mSELECT * FROM "manufacturers" WHERE ("manufacturers"."id" IN (778622964,506965603)) [0m
+  [4;35;1mKind Load (0.3ms)[0m   [0mSELECT * FROM "kinds" WHERE ("kinds"."id" IN (691081111,833631093)) [0m
+Rendering template within layouts/default
+Rendering assets/index
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 466789397) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 466789397) [0m
+Completed in 22ms (View: 11, DB: 20) | 200 OK [http://test.host/assets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing AssetsController#new (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+Rendering template within layouts/default
+Rendering assets/new
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mModel Load (0.2ms)[0m   [0mSELECT * FROM "models" [0m
+  [4;36;1mManufacturer Load (0.4ms)[0m   [0;1mSELECT * FROM "manufacturers" WHERE ("manufacturers"."id" = 506965603) [0m
+  [4;35;1mManufacturer Load (0.4ms)[0m   [0mSELECT * FROM "manufacturers" WHERE ("manufacturers"."id" = 778622964) [0m
+  [4;36;1mLocation Load (0.2ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendered assets/_fields (5.3ms)
+Completed in 7ms (View: 5, DB: 2) | 200 OK [http://test.host/assets/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "examples" [0m
+
+
+Processing ExamplesController#create (for 0.0.0.0 at 2009-01-12 23:43:57) [POST]
+  Parameters: {"example"=>{}}
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO "examples" ("created_at", "updated_at") VALUES('2009-01-13 06:43:57.189694', '2009-01-13 06:43:57.189694') RETURNING "id"[0m
+Redirected to #<Example:0x254ddbc>
+Completed in 10ms (DB: 2) | 302 Found [http://test.host/examples?]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "examples" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "examples" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing ExamplesController#index (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  [4;35;1mExample Load (0.2ms)[0m   [0mSELECT * FROM "examples" [0m
+Rendering template within layouts/default
+Rendering examples/index
+Completed in 2ms (View: 1, DB: 2) | 200 OK [http://test.host/examples]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing ExamplesController#new (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+Rendering template within layouts/default
+Rendering examples/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/examples/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "kinds" [0m
+
+
+Processing KindsController#create (for 0.0.0.0 at 2009-01-12 23:43:57) [POST]
+  Parameters: {"kind"=>{}}
+Rendering template within layouts/default
+Rendering kinds/new
+Rendered kinds/_fields (0.4ms)
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://test.host/kinds?]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "kinds" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "kinds" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing KindsController#index (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  [4;35;1mKind Load (0.3ms)[0m   [0mSELECT * FROM "kinds" [0m
+Rendering template within layouts/default
+Rendering kinds/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "models" WHERE ("models".kind_id = 845164919) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "models" WHERE ("models".kind_id = 833631093) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "models" WHERE ("models".kind_id = 691081111) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "models" WHERE ("models".kind_id = 739288063) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "models" WHERE ("models".kind_id = 337151097) [0m
+Completed in 10ms (View: 8, DB: 3) | 200 OK [http://test.host/kinds]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing KindsController#new (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+Rendering template within layouts/default
+Rendering kinds/new
+Rendered kinds/_fields (0.3ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/kinds/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "locations" [0m
+
+
+Processing LocationsController#create (for 0.0.0.0 at 2009-01-12 23:43:57) [POST]
+  Parameters: {"location"=>{}}
+Rendering template within layouts/default
+Rendering locations/new
+Rendered locations/_fields (0.4ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/locations?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "locations" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "locations" [0m
+
+
+Processing LocationsController#destroy (for 0.0.0.0 at 2009-01-12 23:43:57) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing LocationsController#edit (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mLocation Load (0.3ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing LocationsController#index (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  [4;36;1mLocation Load (0.2ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/default
+Rendering locations/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "assets" WHERE ("assets".location_id = 344860588) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "assets" WHERE ("assets".location_id = 466789397) [0m
+Completed in 6ms (View: 4, DB: 3) | 200 OK [http://test.host/locations]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing LocationsController#new (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+Rendering template within layouts/default
+Rendering locations/new
+Rendered locations/_fields (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/locations/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing LocationsController#show (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing LocationsController#update (for 0.0.0.0 at 2009-01-12 23:43:57) [PUT]
+  Parameters: {"location"=>{}, "id"=>"1"}
+  [4;36;1mLocation Load (0.3ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "manufacturers" [0m
+
+
+Processing ManufacturersController#create (for 0.0.0.0 at 2009-01-12 23:43:57) [POST]
+  Parameters: {"manufacturer"=>{}}
+Rendering template within layouts/default
+Rendering manufacturers/new
+Rendered manufacturers/_fields (0.4ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/manufacturers?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "manufacturers" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "manufacturers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing ManufacturersController#index (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  [4;36;1mManufacturer Load (0.3ms)[0m   [0;1mSELECT * FROM "manufacturers" [0m
+Rendering template within layouts/default
+Rendering manufacturers/index
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "models" WHERE ("models".manufacturer_id = 506965603) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "models" WHERE ("models".manufacturer_id = 778622964) [0m
+Completed in 6ms (View: 4, DB: 2) | 200 OK [http://test.host/manufacturers]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing ManufacturersController#new (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+Rendering template within layouts/default
+Rendering manufacturers/new
+Rendered manufacturers/_fields (0.3ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/manufacturers/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "models" [0m
+
+
+Processing ModelsController#create (for 0.0.0.0 at 2009-01-12 23:43:57) [POST]
+  Parameters: {"model"=>{}}
+Rendering template within layouts/default
+Rendering models/new
+  [4;36;1mManufacturer Load (0.3ms)[0m   [0;1mSELECT * FROM "manufacturers" [0m
+  [4;35;1mKind Load (0.2ms)[0m   [0mSELECT * FROM "kinds" [0m
+Rendered models/_fields (2.2ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://test.host/models?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "models" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "models" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing ModelsController#index (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  [4;36;1mModel Load (0.3ms)[0m   [0;1mSELECT * FROM "models" [0m
+Rendering template within layouts/default
+Rendering models/index
+  [4;35;1mManufacturer Load (0.3ms)[0m   [0mSELECT * FROM "manufacturers" WHERE ("manufacturers"."id" = 506965603) [0m
+  [4;36;1mManufacturer Load (0.3ms)[0m   [0;1mSELECT * FROM "manufacturers" WHERE ("manufacturers"."id" = 778622964) [0m
+  [4;35;1mKind Load (0.3ms)[0m   [0mSELECT * FROM "kinds" WHERE ("kinds"."id" = 691081111) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "assets" WHERE ("assets".model_id = 515471361) [0m
+  [4;35;1mKind Load (0.3ms)[0m   [0mSELECT * FROM "kinds" WHERE ("kinds"."id" = 833631093) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "assets" WHERE ("assets".model_id = 90487597) [0m
+Completed in 10ms (View: 7, DB: 3) | 200 OK [http://test.host/models]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing ModelsController#new (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+Rendering template within layouts/default
+Rendering models/new
+  [4;35;1mManufacturer Load (0.3ms)[0m   [0mSELECT * FROM "manufacturers" [0m
+  [4;36;1mKind Load (0.2ms)[0m   [0;1mSELECT * FROM "kinds" [0m
+Rendered models/_fields (1.9ms)
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/models/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-01-12 23:43:57) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/default
+Rendering users/new
+Rendered users/_fields (0.6ms)
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://test.host/users?]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/default
+Rendering users/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "assets" WHERE ("assets".user_id = 236175557) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "assets" WHERE ("assets".user_id = 842437485) [0m
+Completed in 6ms (View: 4, DB: 2) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-01-12 23:43:57) [GET]
+Rendering template within layouts/default
+Rendering users/new
+Rendered users/_fields (0.5ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
