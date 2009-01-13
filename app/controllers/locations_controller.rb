@@ -45,7 +45,7 @@ class LocationsController < ApplicationController
     respond_to do |format|
       if @location.save
         flash[:notice] = 'Location was successfully created.'
-        format.html { redirect_to(@location) }
+        format.html { redirect_to(locations_path) }
         format.xml  { render :xml => @location, :status => :created, :location => @location }
       else
         format.html { render :action => "new" }
@@ -62,7 +62,7 @@ class LocationsController < ApplicationController
     respond_to do |format|
       if @location.update_attributes(params[:location])
         flash[:notice] = 'Location was successfully updated.'
-        format.html { redirect_to(@location) }
+        format.html { redirect_to(locations_path) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

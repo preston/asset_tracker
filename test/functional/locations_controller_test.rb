@@ -29,7 +29,7 @@ class LocationsControllerTest < Test::Unit::TestCase
     post :create, :location => {:name => 'Home'}
     assert_equal old_count+1, Location.count
     
-    assert_redirected_to location_path(assigns(:location))
+    assert_redirected_to locations_path
   end
 
   def test_should_show_location
@@ -44,7 +44,7 @@ class LocationsControllerTest < Test::Unit::TestCase
   
   def test_should_update_location
     put :update, :id => locations(:conference), :location => { }
-    assert_redirected_to location_path(assigns(:location))
+    assert_redirected_to locations_path
   end
   
   def test_should_destroy_location
