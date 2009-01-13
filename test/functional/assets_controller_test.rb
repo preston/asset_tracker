@@ -13,8 +13,12 @@ class AssetsControllerTest < ActionController::TestCase
   end
 
   test "should create asset" do
-    assert_difference('asset.count') do
-      post :create, :asset => { }
+    assert_difference('Asset.count') do
+      post :create, :asset => {
+        :user_id => users(:alice).id,
+        :model_id => models(:macbook).id,
+        :location_id => locations(:conference).id
+      }
     end
 
     assert_redirected_to assets_path
@@ -36,7 +40,7 @@ class AssetsControllerTest < ActionController::TestCase
   end
 
   test "should destroy asset" do
-    assert_difference('asset.count', -1) do
+    assert_difference('Asset.count', -1) do
       delete :destroy, :id => assets(:alice_macbook).id
     end
 
