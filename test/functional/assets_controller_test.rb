@@ -17,27 +17,27 @@ class AssetsControllerTest < ActionController::TestCase
       post :create, :asset => { }
     end
 
-    assert_redirected_to asset_path(assigns(:asset))
+    assert_redirected_to assets_path
   end
 
   test "should show asset" do
-    get :show, :id => assets(:one).id
+    get :show, :id => assets(:alice_macbook).id
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => assets(:one).id
+    get :edit, :id => assets(:alice_macbook).id
     assert_response :success
   end
 
   test "should update asset" do
-    put :update, :id => assets(:one).id, :asset => { }
-    assert_redirected_to asset_path(assigns(:asset))
+    put :update, :id => assets(:alice_macbook).id, :asset => { }
+    assert_redirected_to assets_path
   end
 
   test "should destroy asset" do
     assert_difference('asset.count', -1) do
-      delete :destroy, :id => assets(:one).id
+      delete :destroy, :id => assets(:alice_macbook).id
     end
 
     assert_redirected_to assets_path

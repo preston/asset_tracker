@@ -14,30 +14,30 @@ class KindsControllerTest < ActionController::TestCase
 
   test "should create kind" do
     assert_difference('Kind.count') do
-      post :create, :kind => { }
+      post :create, :kind => {:name => 'Phone'}
     end
 
-    assert_redirected_to kind_path(assigns(:kind))
+    assert_redirected_to kinds_path
   end
 
   test "should show kind" do
-    get :show, :id => kinds(:one).id
+    get :show, :id => kinds(:laptop).id
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => kinds(:one).id
+    get :edit, :id => kinds(:laptop).id
     assert_response :success
   end
 
   test "should update kind" do
-    put :update, :id => kinds(:one).id, :kind => { }
-    assert_redirected_to kind_path(assigns(:kind))
+    put :update, :id => kinds(:laptop).id, :kind => { }
+    assert_redirected_to kinds_path
   end
 
   test "should destroy kind" do
     assert_difference('Kind.count', -1) do
-      delete :destroy, :id => kinds(:one).id
+      delete :destroy, :id => kinds(:laptop).id
     end
 
     assert_redirected_to kinds_path

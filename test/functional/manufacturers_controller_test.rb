@@ -14,30 +14,30 @@ class ManufacturersControllerTest < ActionController::TestCase
 
   test "should create manufacturer" do
     assert_difference('Manufacturer.count') do
-      post :create, :manufacturer => { }
+      post :create, :manufacturer => {:name => 'Microsoft'}
     end
 
-    assert_redirected_to manufacturer_path(assigns(:manufacturer))
+    assert_redirected_to manufacturers_path
   end
 
   test "should show manufacturer" do
-    get :show, :id => manufacturers(:one).id
+    get :show, :id => manufacturers(:apple).id
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => manufacturers(:one).id
+    get :edit, :id => manufacturers(:apple).id
     assert_response :success
   end
 
   test "should update manufacturer" do
-    put :update, :id => manufacturers(:one).id, :manufacturer => { }
-    assert_redirected_to manufacturer_path(assigns(:manufacturer))
+    put :update, :id => manufacturers(:apple).id, :manufacturer => { }
+    assert_redirected_to manufacturers_path
   end
 
   test "should destroy manufacturer" do
     assert_difference('Manufacturer.count', -1) do
-      delete :destroy, :id => manufacturers(:one).id
+      delete :destroy, :id => manufacturers(:apple).id
     end
 
     assert_redirected_to manufacturers_path

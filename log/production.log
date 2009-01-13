@@ -5773,3 +5773,24 @@ Processing UsersController#index (for 127.0.0.1 at 2009-01-12 23:58:15) [GET]
 Rendering template within layouts/default
 Rendering users/index
 Completed in 16ms (View: 12, DB: 6) | 200 OK [http://localhost/users]
+
+
+Processing AssetsController#index (for 127.0.0.1 at 2009-01-13 00:10:09) [GET]
+  Session ID: ba99da40b0ed0f5cfc060ba85373d0d0
+Rendering template within layouts/default
+Rendering assets/index
+Completed in 87ms (View: 62, DB: 7) | 200 OK [http://localhost/assets]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-01-13 00:10:20) [GET]
+  Session ID: ba99da40b0ed0f5cfc060ba85373d0d0
+Rendering template within layouts/default
+Rendering locations/index
+Completed in 11ms (View: 5, DB: 6) | 200 OK [http://localhost/locations]
+
+
+Processing AssetsController#index (for 127.0.0.1 at 2009-01-13 00:10:21) [GET]
+  Session ID: ba99da40b0ed0f5cfc060ba85373d0d0
+Rendering template within layouts/default
+Rendering assets/index
+Completed in 74ms (View: 59, DB: 5) | 200 OK [http://localhost/assets]

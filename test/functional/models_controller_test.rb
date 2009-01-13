@@ -14,30 +14,30 @@ class ModelsControllerTest < ActionController::TestCase
 
   test "should create model" do
     assert_difference('Model.count') do
-      post :create, :model => { }
+      post :create, :model => {:name => 'Ninjitsu 5000', :manufacturer_id => manufacturers(:apple).id, :kind_id => kinds(:laptop).id}
     end
 
-    assert_redirected_to model_path(assigns(:model))
+    assert_redirected_to models_path
   end
 
   test "should show model" do
-    get :show, :id => models(:one).id
+    get :show, :id => models(:macbook).id
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => models(:one).id
+    get :edit, :id => models(:macbook).id
     assert_response :success
   end
 
   test "should update model" do
-    put :update, :id => models(:one).id, :model => { }
-    assert_redirected_to model_path(assigns(:model))
+    put :update, :id => models(:macbook).id, :model => { }
+    assert_redirected_to models_path
   end
 
   test "should destroy model" do
     assert_difference('Model.count', -1) do
-      delete :destroy, :id => models(:one).id
+      delete :destroy, :id => models(:macbook).id
     end
 
     assert_redirected_to models_path
