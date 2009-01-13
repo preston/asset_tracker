@@ -14,7 +14,7 @@ class KindsControllerTest < ActionController::TestCase
 
   test "should create kind" do
     assert_difference('Kind.count') do
-      post :create, :kind => {:name => 'Phone'}
+      post :create, :kind => {:name => 'Key'}
     end
 
     assert_redirected_to kinds_path
