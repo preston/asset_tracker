@@ -14,6 +14,7 @@ div#everything {
 #notice {color: green; padding: 10px;}
 #error {color: red; padding: 10px;}
 
+.explanation {float: right; width: 300px; margin: 20px; padding: 20px; background-color: #f8ffdd; color: #aaa;}
 div#content {padding: 40px 10px;}
 div#footer {color: #808080;border-top: 1px solid #ccc; font-size: 8pt;padding: 4px;background-color: #e0e0e0;}
 

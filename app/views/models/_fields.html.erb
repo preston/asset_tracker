@@ -2,13 +2,15 @@
 
 <div>
 	<label>Manufacturer</label>
-	<%= select :model, :manufacturer_id, Manufacturer.find(:all).collect {|n| [ n.name, n.id ] } %>
+	<%= select :model, :manufacturer_id, Manufacturer.find(:all).collect {|n| [ n.name, n.id ] }.sort %>
+	<%= link_to image_tag('/images/icons/add.png'), new_manufacturer_path %>
 	<%= error_message_on :model, :manufacturer %>
 </div>
 
 <div>
 	<label>Kind</label>
-	<%= select :model, :kind_id, Kind.find(:all).collect {|n| [ n.name, n.id ] } %>
+	<%= select :model, :kind_id, Kind.find(:all).collect {|n| [ n.name, n.id ] }.sort %>
+	<%= link_to image_tag('/images/icons/add.png'), new_kind_path %>
 	<%= error_message_on :model, :kind %>
 </div>
 

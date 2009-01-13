@@ -5794,3 +5794,46 @@ Processing AssetsController#index (for 127.0.0.1 at 2009-01-13 00:10:21) [GET]
 Rendering template within layouts/default
 Rendering assets/index
 Completed in 74ms (View: 59, DB: 5) | 200 OK [http://localhost/assets]
+
+
+Processing AssetsController#index (for 127.0.0.1 at 2009-01-13 00:37:24) [GET]
+  Session ID: bf3a731abc4d7e6d387e7fa6a755297e
+Rendering template within layouts/default
+Rendering assets/index
+Completed in 148ms (View: 123, DB: 8) | 200 OK [http://localhost/assets]
+
+
+Processing ManufacturersController#index (for 127.0.0.1 at 2009-01-13 00:37:27) [GET]
+  Session ID: bf3a731abc4d7e6d387e7fa6a755297e
+Rendering template within layouts/default
+Rendering manufacturers/index
+Completed in 15ms (View: 8, DB: 68) | 200 OK [http://localhost/manufacturers]
+
+
+Processing ManufacturersController#new (for 127.0.0.1 at 2009-01-13 00:37:29) [GET]
+  Session ID: bf3a731abc4d7e6d387e7fa6a755297e
+Rendering template within layouts/default
+Rendering manufacturers/new
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://localhost/manufacturers/new]
+
+
+Processing ManufacturersController#create (for 127.0.0.1 at 2009-01-13 00:37:31) [POST]
+  Session ID: bf3a731abc4d7e6d387e7fa6a755297e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"87573d7deb0375aa3b0f51f01c268d4d4000e8eb", "manufacturer"=>{"name"=>"Apple"}}
+Rendering template within layouts/default
+Rendering manufacturers/new
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://localhost/manufacturers]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-13 00:37:35) [GET]
+  Session ID: bf3a731abc4d7e6d387e7fa6a755297e
+Rendering template within layouts/default
+Rendering users/index
+Completed in 18ms (View: 11, DB: 5) | 200 OK [http://localhost/users]
+
+
+Processing AssetsController#index (for 127.0.0.1 at 2009-01-13 00:37:36) [GET]
+  Session ID: bf3a731abc4d7e6d387e7fa6a755297e
+Rendering template within layouts/default
+Rendering assets/index
+Completed in 73ms (View: 59, DB: 5) | 200 OK [http://localhost/assets]
