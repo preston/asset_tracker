@@ -1,21 +1,32 @@
 development:
-  adapter: postgresql
+  adapter: postgres
   database: asset_tracker_development
   hostname: localhost
   username: asset_tracker
   password: asset_tracker
 
 test:
-  adapter: postgresql
+  adapter: postgres
   database: asset_tracker_test
   hostname: localhost
   username: asset_tracker
   password: asset_tracker
 
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+
+test:
+  adapter: postgresql
+  database: asset_tracker_test
+  host: localhost
+  username: postgres
+  password: postgres
+
 production:
   adapter: postgresql
   database: asset_tracker_production
-  hostname: localhost
-  username: asset_tracker
-  password: asset_tracker
+  host: localhost
+  username: postgres
+  password: postgres
 
