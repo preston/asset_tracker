@@ -1,7 +1,7 @@
 <h1><%= @title = h(@manufacturer.name) %></h1>
 
 <%= link_to image_tag('/images/icons/pencil.png'), edit_manufacturer_path(@manufacturer) %> 
-<%= link_to image_tag('/images/icons/delete.png'), @manufacturer, :confirm => 'Are you sure?', :method => :delete %>
+<%= link_to image_tag('/images/icons/bin_closed.png'), @manufacturer, :confirm => 'Are you sure?', :method => :delete %>
 
 <table>
 	<tbody>
@@ -38,7 +38,7 @@
     <td><%= link_to h(model.name), model %></td>
     <td><%= link_to h(model.kind.name), model.kind %></td>
     <td><%= link_to image_tag('/images/icons/pencil.png'), edit_model_path(model) %>
-<%= link_to image_tag('/images/icons/delete.png'), model, :confirm => 'Are you sure?', :method => :delete %></td>
+<%= link_to image_tag('/images/icons/bin_closed.png'), model, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </tbody>

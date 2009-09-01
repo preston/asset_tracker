@@ -1,40 +1,45 @@
+<%= button_function :container => 'new_asset_container', :text_shown => 'Add', :text_hidden => "Add", :class => 'new_button' %>
+
+
 <div class="explanation">
-	An "asset" is a single piece of property put into someones care, such as a MacBook (model) assigned to Suzie (user) in Phoenix (location). If you know the serial numbers of each instance, you should track them as well.
+	<h1><%= @title = 'Assets.'%></h1>
+	<p>An "asset" is a single piece of property put into someone's care, such as a MacBook (model) assigned to Suzie (person) at Headquarters (location). If you know the serial numbers of each instance, you should track them as well to avoid confusion.</p>
 </div>
 
 
-<h1><%= @title = 'Assets'%></h1>
+<div id="new_asset_container" style="display:none">
+  <div>
+    <% remote_form_for @asset do |f| %>
+		<%= render :partial => 'assets/fields', :locals => {:f => f}%>
+		<%= button_submit %>
+	<% end %>
+  </div>
+</div>
 
-<%= link_to image_tag('/images/icons/add.png'), new_asset_path %>
+
+
+
+<h2>Everything being tracked.</h2>
 
 <table>
 	<thead>
-  <tr>
-	<td>User</td>
-	<td>Manufacturer</td>
-	<td>Model</td>
-	<td>Kind</td>
-	<td>Location</td>
-	<td>Serial</td>
-	<td>Notes</td>
-	<td>Actions</td>
-  </tr>
+ 	 <tr>
+ 	   <td>Person</td>
+ 	   <td>Manufacturer</td>
+ 	   <td>Model</td>
+ 	   <td>Type</td>
+ 	   <td>Location</td>
+ 	   <td>Serial</td>
+ 	   <td>Notes</td>
+ 	   <td>Actions</td>
+ 	 </tr>
 	</thead>
-	<tbody>
-
+	<tbody id="assets">
 <% for asset in @assets %>
-  <tr>
-	<td><%= link_to h(asset.user.login), asset.user %></td>
-    <td><%= link_to h(asset.model.manufacturer.name), asset.model.manufacturer %></td>
-    <td><%= link_to h(asset.model.name), asset.model %></td>
-  	<td><%= link_to h(asset.model.kind.name), asset.model.kind %></td>
-  	<td><%= link_to h(asset.location.name), asset.location %></td>
-    <td><%= link_to h(asset.serial), asset %></td>
-    <td><%= h(asset.notes) %></td>
-    <td><%= link_to image_tag('/images/icons/pencil.png'), edit_asset_path(asset) %>
-    <%= link_to image_tag('/images/icons/delete.png'), asset, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+	<%= render :partial => 'assets/row', :locals => {:asset => asset} %>
 <% end %>
 </tbody>
 
 </table>
+
+<p class="count">You have <%= pluralize @assets.size, 'asset' %>.</p>

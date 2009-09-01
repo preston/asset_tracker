@@ -2,8 +2,8 @@ class KindsController < ApplicationController
   # GET /kinds
   # GET /kinds.xml
   def index
-    @kinds = Kind.find(:all)
-
+    @kinds = Kind.find(:all, :include => [:models => :assets])
+    @kind = Kind.new
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @kinds }
@@ -47,9 +47,11 @@ class KindsController < ApplicationController
         flash[:notice] = 'Kind was successfully created.'
         format.html { redirect_to(kinds_path) }
         format.xml  { render :xml => @kind, :status => :created, :location => @kind }
+        format.js
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @kind.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -64,9 +66,11 @@ class KindsController < ApplicationController
         flash[:notice] = 'Kind was successfully updated.'
         format.html { redirect_to(kinds_path) }
         format.xml  { head :ok }
+        format.js
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @kind.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -80,6 +84,7 @@ class KindsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(kinds_url) }
       format.xml  { head :ok }
+      format.js
     end
   end
 end

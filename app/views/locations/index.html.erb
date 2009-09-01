@@ -1,12 +1,23 @@
+<%= button_function :container => 'new_location_container', :text_shown => 'Add', :text_hidden => "Add", :class => 'new_button' %>
+
+
 <div class="explanation">
-	A "location" represents a physical place, such as "Headquarters", "Server Room" or "Home". Assets get tied to a single location.
+	<h1><%= @title = 'Locations.'%></h1>
+	<p>A "location" represents a physical place, such as "Headquarters", "Server Room" or "Home". Individual assets get tied to a single location and person.</p>
 </div>
 
 
-<h1><%= @title = 'Locations'%></h1>
+<div id="new_location_container" style="display:none">
+  <div>
+    <% remote_form_for @location do |f| %>
+		<%= render :partial => 'locations/fields', :locals => {:f => f}%>
+		<%= button_submit %>
+	<% end %>
+  </div>
+</div>
 
-<%= link_to image_tag('/images/icons/add.png'), new_location_path %>
 
+<h2>Everywhere assets could be.</h2>
 
 <table>
 	<thead>
@@ -16,18 +27,11 @@
 	<td>Actions</td>
   </tr>
 </thead>
-<tbody>
+<tbody id="locations">
 <% for location in @locations %>
-  <tr>
-    <td><%= link_to h(location.name), location %></td>
-    <td><%= location.assets.count %></td>
-    <td>
-	<%= link_to '[new asset]', new_asset_path() %>
-	<%= link_to image_tag('/images/icons/pencil.png'), edit_location_path(location) %>
-<%= link_to image_tag('/images/icons/delete.png'), location, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+	<%= render :partial => 'locations/row', :locals => {:location => location} %>
 <% end %>
 </tbody>
 </table>
 
-<br />
+<p class="count">You have <%= pluralize @locations.size, 'location' %>.</p>

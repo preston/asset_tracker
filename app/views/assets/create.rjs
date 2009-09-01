@@ -1,0 +1,5 @@
+html = render(:partial => 'assets/row', :locals => {:asset => @asset})
+id = "asset_" + @asset.id.to_s
+page.insert_html :top, 'assets', html
+page.visual_effect :highlight, id
+# page << "alert('hi');"

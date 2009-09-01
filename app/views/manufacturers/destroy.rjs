@@ -1,0 +1,2 @@
+id = 'manufacturer_' + @manufacturer.id.to_s
+page.visual_effect :fade, id

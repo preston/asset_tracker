@@ -1,0 +1,2 @@
+id = 'asset_' + @asset.id.to_s
+page.visual_effect :fade, id

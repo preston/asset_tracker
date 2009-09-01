@@ -1,7 +1,7 @@
 <h1><%= h(@kind.name) %> Models</h1>
 
 <%= link_to image_tag('/images/icons/pencil.png'), edit_kind_path(@kind) %>
-<%= link_to image_tag('/images/icons/delete.png'), @kind, :confirm => 'Are you sure?', :method => :delete %>
+<%= link_to image_tag('/images/icons/bin_closed.png'), @kind, :confirm => 'Are you sure?', :method => :delete %>
 
 <table>
   <tr>

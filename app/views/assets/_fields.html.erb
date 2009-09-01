@@ -1,6 +1,6 @@
 
 <div>
-	<label>User</label>
+	<label>Person</label>
 	<%= select :asset, :user_id, User.find(:all).collect {|n| [ "#{h(n.login)} <#{h(n.email)}>", n.id ] }.sort %>
 	<%= link_to image_tag('/images/icons/add.png'), new_user_path %>
 	<%= error_message_on :asset, :user_id %>

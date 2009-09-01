@@ -1,0 +1,5 @@
+html = render(:partial => 'manufacturers/row', :locals => {:manufacturer => @manufacturer})
+id = "manufacturer_" + @manufacturer.id.to_s
+page.insert_html :top, 'manufacturers', html
+page.visual_effect :highlight, id
+# page << "alert('hi');"

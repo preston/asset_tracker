@@ -1,7 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+
   map.resources :locations
-
-
   map.resources :examples
   map.resources :users
   map.resources :kinds

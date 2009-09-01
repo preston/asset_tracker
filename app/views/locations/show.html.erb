@@ -1,7 +1,7 @@
 <h1><%= h(@location.name) %></h1>
 
 <%= link_to image_tag('/images/icons/pencil.png'), edit_location_path(@location) %>
-<%= link_to image_tag('/images/icons/delete.png'), @location, :confirm => 'Are you sure?', :method => :delete %>
+<%= link_to image_tag('/images/icons/bin_closed.png'), @location, :confirm => 'Are you sure?', :method => :delete %>
 
 <h2>Assets</h2>
 
@@ -25,7 +25,7 @@
     <td><%= link_to h(asset.serial), asset %></td>
     <td><%= link_to h(asset.notes), asset %></td>
     <td><%= link_to image_tag('/images/icons/pencil.png'), edit_asset_path(asset) %>
-<%= link_to image_tag('/images/icons/delete.png'), asset, :confirm => 'Are you sure?', :method => :delete %></td>
+<%= link_to image_tag('/images/icons/bin_closed.png'), asset, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

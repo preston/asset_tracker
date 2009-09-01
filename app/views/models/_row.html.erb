@@ -1,0 +1,9 @@
+  <tr id="model_<%= model.id %>" class="<%= cycle 'odd', 'even' %>">	
+	<td><%= link_to h(model.manufacturer.name), edit_manufacturer_path(model.manufacturer) %></td>
+    <td><%= link_to h(model.name), edit_model_path(model) %></td>
+    <td><%= link_to h(model.kind.name), edit_kind_path(model.kind) %></td>
+	<td><%= link_to model.assets.count, edit_model_path(model) %></td>
+    <td>
+<%= link_to image_tag('/images/icons/pencil.png'), edit_model_path(model) %>
+    <%= link_to_remote image_tag('/images/icons/bin_closed.png'), :url => model_url(model), :method => :delete %></td>
+  </tr>

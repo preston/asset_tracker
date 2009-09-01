@@ -1,0 +1,8 @@
+  <tr id="user_<%= user.id %>" class="<%= cycle 'odd', 'even' %>">
+    <td><%= link_to h(user.login), edit_user_path(user) %></td>
+    <td><%= mail_to h(user.email) %></td>
+    <td><%= user.assets.count %></td>
+    <td>
+	<%= link_to image_tag('/images/icons/pencil.png'), edit_user_path(user) %>
+	<%= link_to_remote image_tag('/images/icons/bin_closed.png'), :url => user_url(user), :method => :delete %></td>
+  </tr>

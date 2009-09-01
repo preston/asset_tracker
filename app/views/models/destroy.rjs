@@ -1,0 +1,2 @@
+id = 'model_' + @model.id.to_s
+page.visual_effect :fade, id

@@ -1,4 +1,4 @@
-<h1>Editing user</h1>
+<h1><%= @title = h(@user.login) %></h1>
 
 <% form_for(@user) do |f| %>
   <%= f.error_messages %>
@@ -6,9 +6,26 @@
   <%= render :partial => 'fields', :locals => {:f => f} %>
 
   <p>
-    <%= f.submit "Update" %>
+    <%= button_submit %>
   </p>
 <% end %>
 
-<%= link_to '[show]', @user %> |
-<%= link_to '[all]', users_path %>
+<h2>Assets in <%= h(@user.login) %>'s possession.</h2>
+
+<table>
+	<thead>
+  <tr>
+	<td>Manufacturer</td>
+	<td>Model</td>
+	<td>Type</td>
+	<td>Serial</td>
+	<td>Notes</td>
+	<td>Actions</td>
+  </tr>
+	</thead>
+	<tbody>
+<% for asset in @user.assets %>
+	<%= render :partial => 'assets/asset', :locals => {:asset => asset} %>
+<% end %>
+	</tbody>
+</table>

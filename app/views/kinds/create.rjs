@@ -1,0 +1,5 @@
+html = render(:partial => 'kinds/row', :locals => {:kind => @kind})
+id = "kind_" + @kind.id.to_s
+page.insert_html :top, 'kinds', html
+page.visual_effect :highlight, id
+# page << "alert('hi');"

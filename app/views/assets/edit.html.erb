@@ -1,4 +1,4 @@
-<h1>Editing asset</h1>
+<h1><%= @title = 'Edit asset.' %></h1>
 
 <% form_for(@asset) do |f| %>
   <%= f.error_messages %>
@@ -6,6 +6,9 @@
   <%= render :partial => 'fields', :locals => {:f => f} %>
 
   <p>
-    <%= f.submit "Update" %>
+    <%= button_submit %>
   </p>
 <% end %>
+
+
+<%= link_to '[all assets]', assets_path %>

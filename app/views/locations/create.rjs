@@ -1,0 +1,5 @@
+html = render(:partial => 'locations/row', :locals => {:location => @location})
+id = "location_" + @location.id.to_s
+page.insert_html :top, 'locations', html
+page.visual_effect :highlight, id
+# page << "alert('hi');"

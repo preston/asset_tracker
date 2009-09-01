@@ -1,0 +1,2 @@
+id = 'location_' + @location.id.to_s
+page.visual_effect :fade, id

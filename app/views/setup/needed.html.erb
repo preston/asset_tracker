@@ -1,0 +1,24 @@
+<div class='setup_check'>
+
+<p><strong>Whoaaa!!!</strong> You first need to define at least one of the following!</p>
+
+<ol>
+	<% if Location.count == 0 %>
+		<li><%= link_to "A <em>location</em> that assets live.", locations_path %></li>
+	<% end %>
+	<% if Kind.count == 0 %>
+		<li><%= link_to "An <em>asset type</em>, like a 'Laptop'.", kinds_path %></li>
+	<% end %>
+	<% if Manufacturer.count == 0 %>
+		<li><%= link_to "A <em>manufacturer</em>, like 'Apple'.", manufacturers_path %></li>
+	<% end %>
+	<% if Model.count == 0 %>
+		<li><%= link_to "A specific asset <em>model</em>, like 'MacBook 2.0GHz'.", models_path %></li>
+	<% end %>
+	<% if User.count == 0 %>
+		<li><%= link_to "A <em>person</em> that will be responsible for assets, like 'Bob'.", users_path %></li>
+	<% end %>
+	
+</ol>
+
+</div>

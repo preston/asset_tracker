@@ -1,0 +1,12 @@
+<tr id="asset_<%= asset.id %>" class="<%= cycle 'odd', 'even' %>">
+	<td><%= link_to h(asset.user.login), edit_user_path(asset.user) %></td>
+  <td><%= link_to h(asset.model.manufacturer.name), edit_manufacturer_path(asset.model.manufacturer) %></td>
+  <td><%= link_to h(asset.model.name), edit_model_path(asset.model) %></td>
+	<td><%= link_to h(asset.model.kind.name), edit_kind_path(asset.model.kind) %></td>
+	<td><%= link_to h(asset.location.name), edit_location_path(asset.location) %></td>
+  <td><%= link_to h(asset.serial), edit_asset_path(asset) %></td>
+  <td><%= h(asset.notes) %></td>
+  <td><%= link_to image_tag('/images/icons/pencil.png'), edit_asset_path(asset) %>
+  <%= link_to_remote image_tag('/images/icons/bin_closed.png'), :url => asset_url(asset), :method => :delete %>
+</td>
+</tr>

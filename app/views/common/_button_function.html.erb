@@ -1,0 +1,17 @@
+
+<% css ||= ''; css_class = "button #{css}" %>
+
+<div class="<%= css_class %>">
+  <div>
+    <%= image_tag image %>
+    <p>
+
+		<%=
+		link_to_function(text_hidden, nil, :id => id) do |page|
+		    page.visual_effect :toggle_blind, container
+		    page[id].replace_html text_shown
+		end
+		%>
+	</p>
+  </div>
+</div>

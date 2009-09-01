@@ -1,0 +1,5 @@
+html = render(:partial => 'models/row', :locals => {:model => @model})
+id = "model_" + @model.id.to_s
+page.insert_html :top, 'models', html
+page.visual_effect :highlight, id
+# page << "alert('hi');"

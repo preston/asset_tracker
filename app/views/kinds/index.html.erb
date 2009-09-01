@@ -1,32 +1,38 @@
+<%= button_function :container => 'new_kind_container', :text_shown => 'Add', :text_hidden => "Add", :class => 'new_button' %>
+
+
 <div class="explanation">
-	A "kind" is a type of asset such as "Laptop", "Monitor" or "Desk". When new product models are tracked, they must be of one of these types.
+	<h1><%= @title = 'Asset types.'%></h1>
+	<p>	As Asset type is generally something like "Laptop", "Monitor" or "Desk", but can also represent intangibles like "License Key" or "Confidential Document".</p>
 </div>
 
-<h1><%= @title = 'Kinds'%></h1>
 
-<%= link_to image_tag('/images/icons/add.png'), new_kind_path %>
+<div id="new_kind_container" style="display:none">
+  <div>
+    <% remote_form_for @kind do |f| %>
+		<%= render :partial => 'kinds/fields', :locals => {:f => f}%>
+		<%= button_submit %>
+	<% end %>
+  </div>
+</div>
 
+
+<h2>What types of assets do you have?</h2>
 
 <table>
 	<thead>
   <tr>
 	<td>Name</td>
 	<td>Models</td>
+	<td>Assets</td>
 	<td>Actions</td>
   </tr>
 </thead>
-<tbody>
+<tbody id="kinds">
 <% for kind in @kinds %>
-  <tr>
-	<td><%= link_to h(kind.name), kind %></td>
-    <td><%= kind.models.count %></td>
-    <td>
-<%= link_to '[new model]', new_model_path %>
-<%= link_to image_tag('/images/icons/pencil.png'), edit_kind_path(kind) %>
-    <%= link_to image_tag('/images/icons/delete.png'), kind, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+	<%= render :partial => 'kinds/row', :locals => {:kind => kind} %>
 <% end %>
 </tbody>
 </table>
 
-<br />
+<p class="count">You have <%= pluralize @kinds.size, 'asset type' %>.</p>

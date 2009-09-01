@@ -1,4 +1,4 @@
-<h1>Editing model</h1>
+<h1><%= @title = 'Edit ' + h(@model.name) %></h1>
 
 <% form_for(@model) do |f| %>
   <%= f.error_messages %>
@@ -7,9 +7,34 @@
   <%= render :partial => 'fields', :locals => {:f => f} %>
 
   <p>
-    <%= f.submit "Update" %>
+    <%= button_submit %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @model %> |
-<%= link_to 'Back', models_path %>
+
+<h2>All known models.</h2>
+
+<table>
+	<thead>
+  <tr>
+	<td>Login</td>
+	<td>Serial</td>
+	<td>Notes</td>
+	<td>Actions</td>
+  </tr>
+	</thead>
+<tbody>
+<% for asset in @model.assets %>
+  <tr>
+    <td><%= link_to h(asset.user.login), asset.user %></td>
+    <td><%= link_to h(asset.serial), asset %></td>
+    <td><%= link_to h(asset.notes), asset %></td>
+    <td><%= link_to image_tag('/images/icons/pencil.png'), edit_asset_path(asset) %>
+<%= link_to image_tag('/images/icons/bin_closed.png'), asset, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+
+<%= link_to '[all models]', models_path %>

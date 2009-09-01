@@ -1,37 +1,87 @@
 
-body {
-  font-family: Trebuchet, arial, helvetica, sans-serif;
-  font-size:   13px;
-	background-color: #102040;
-}
+body { font-family: Verdana, Trebuchet, arial, helvetica, sans-serif; font-size:   13px; background-color: #E8E8C8; }
+
+#title { color:#bb9;font-size:10px;font-weight:bold;margin:2px auto 0;text-align:center;}
 
 div#everything {
-	width: 1000px;
-	margin: 20pt auto 0 auto;
-	background-color: #ffffff;
+	width: 800px;
+	margin: 0 auto 0 auto;
+/*	background-color: #ffffff;*/
 }
 
-#notice {color: green; padding: 10px;}
-#error {color: red; padding: 10px;}
+#content_top { background: url(/images/content_top.png) no-repeat 0 0; height: 40px; margin-top: -22px;}
+#content_middle { background: url(/images/content_middle.png) repeat-y 0 0; padding:0 50px;}
+#content_bottom { background: url(/images/content_bottom.png) no-repeat 0 0; height: 35px;}
 
-.explanation {float: right; width: 300px; margin: 20px; padding: 20px; background-color: #f8ffdd; color: #aaa;}
-div#content {padding: 40px 10px;}
-div#footer {color: #808080;border-top: 1px solid #ccc; font-size: 8pt;padding: 4px;background-color: #e0e0e0;}
+#notice {color: green; }
+#error {color: red; }
+/*.explanation {border-left:1px solid #DDDDDD;color:#777777;font-style: italic;font-size: 8pt;}*/
+.explanation p {color:#777777;font-style: italic;font-size: 8pt;}
+.explanation {margin: 10px 0 20px 0;}
 
-ul#navigation {background-color: #102040;}
-ul#navigation li {display: inline; background-color: #fff; padding: 10px; font-size: 14pt;}
+#notice,
+#error {padding: 4px; font-size: 16pt;}
+/*.explanation {float:right;margin:0 0 0 0;padding: 0 10px;width:300px;clear:right;}*/
 
-table {margin: 20px 0;}
-table thead  {	font-weight: bold;	margin: 4px 0; }
-table td {padding: 2px 6px;}
+.setup_check {font-size: 12pt; }
+.setup_check ol {list-style-type: decimal; margin: 20px;font-size: 12pt;}
+.setup_check li {line-height: 1.5em;}
+.setup_check strong {font-size: 26pt; font-weight: bold;}
+.setup_check em {text-decoration:underline;}
+
+.count {clear: both; color: #aaa;}
+
+div#page {margin: 10px 0;}
+div#footer {color: #bbb;border-top: 1px solid #ccc; font-size: 8pt;padding: 4px; }
+
+ul#navigation {border-bottom:1px solid #EEEEEE;padding-bottom:2px;}
+ul#navigation li {display: inline; padding: 10px; font-size: 12pt; font-weight: bold;}
+
+table {margin: 4px 0 20px 0; width: 100%; clear: both;}
+table thead  {	font-weight: bold;	margin: 4px 0; color: #cca;}
+table thead tr {background-color: #222;}
+table td {padding: 6px 6px;}
+table tbody tr.odd {background-color: #eec;}
+table tbody tr.even {}
 
 
-h1 {font-size: 18pt; margin: 16px 0 0 0;}
-h2 {font-size: 15pt; margin: 16px 0;}
+h1 {font-size: 18pt; }
+h2 {font-size: 15pt; }
 
-a { color: #000; }
+a { color: #000; text-decoration: none; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
+
+
+/* Common button styles */
+/*a.button { float: right; }*/
+a.button > div, div.button > div
+  { background: transparent url(/images/button_grey.png) no-repeat 0 0; height:42px; width:106px; font-size: 12pt; color: #888;}
+a.button > div img, div.button > div img
+  {margin: 10px 0 0 12px; }
+a.button > div p
+  {display: inline;}
+div.button > div p
+ {display: inline; padding: 8px 0 0 0;}
+a.button > div input, div.button > div input
+  { background: transparent url(/images/nothing.png) repeat 0 0; border: none; position: inherit; padding: 0px; margin: 0px; color: #888; font-size:12pt; }
+
+.new_button {float: right; margin-right: 10px;}
+
+form {width: 450px; margin: 20px 0 20px 100px;}
+form > div { margin: 4px; }
+form label { float: left; width: 100px; text-align: right; margin: 2px 4px; clear: left; color: #555;}
+/*form input,*/
+form textarea { height: 50px; }
+form textarea,
+form input[type="text"],
+form select { font-size: 10pt; border: 1px solid #ddd; width: 300px;}
+form .button {margin-left:310px;}
+
+/*.new_asset {display: none;}*/
+
+
+
 
 .fieldWithErrors {
   padding: 2px;

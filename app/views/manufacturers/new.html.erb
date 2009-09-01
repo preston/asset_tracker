@@ -1,4 +1,4 @@
-<h1>New manufacturer</h1>
+<h1><%= @title = 'Add Manufacturer' %></h1>
 
 <% form_for(@manufacturer) do |f| %>
   <%= f.error_messages %>
@@ -6,7 +6,7 @@
   <%= render :partial => 'fields', :locals => {:f => f} %>
 
   <p>
-    <%= f.submit "Create" %>
+    <%= button_submit %>
   </p>
 <% end %>
 

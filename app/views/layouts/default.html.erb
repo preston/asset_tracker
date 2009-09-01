@@ -5,33 +5,43 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Asset Tracker <%= " :: #{h(@title)}" if @title %></title>
-  <%= stylesheet_link_tag 'reset' %>
-  <%= stylesheet_link_tag 'default' %>
+  <%= stylesheet_link_tag 'reset', 'default' %>
+  <%= javascript_include_tag :defaults %>
 </head>
 <body>
 
 <div id="everything">
 	
-	<ul id="navigation">
-		<li><%= link_to "Users", users_path %></li>
-		<li><%= link_to "Locations", locations_path %></li>
-		<li><%= link_to "Manufacturers", manufacturers_path %></li>
-		<li><%= link_to "Kinds", kinds_path %></li>
-		<li><%= link_to "Models", models_path %></li>
-		<li><%= link_to "Assets", assets_path %></li>
-	</ul>
-
-	<p id="notice"><%= flash[:notice] %></p>
-	<p id="error"><%= flash[:error] %></p>
-
-	<div id="content">
-	<%= yield  %>
-	</div>
+	<div id="title"><%= link_to 'Asset Tracker', '/' %></div>
 	
-	<div id="footer">
-		<p>Asset Tracker © <%= Time.now.year %> <a href="http://www.openrain.com">OpenRain</a>. All rights reserved.</p>
-		<p>Record asset metadata with this application for insurance purposes and operational sanity.</p>
+	<div id="content_top">&nbsp;</div>
+	
+	<div id="content_middle">
+	
+ 	   <ul id="navigation">	
+ 	   	<li><%= link_to "Assets", assets_path %></li>
+ 	   	<li><%= link_to "People", users_path %></li>
+ 	   	<li><%= link_to "Models", models_path %></li>
+ 	   	<li><%= link_to "Locations", locations_path %></li>
+ 	   	<li><%= link_to "Manufacturers", manufacturers_path %></li>
+ 	   	<li><%= link_to "Asset Types", kinds_path %></li>
+ 	   </ul>
+ 	
+
+ 	
+ 	   <div id="page">
+		<div id="notice"><%= flash[:notice] %></div>
+		<div id="error"><%= flash[:error] %></div>
+		<%= yield  %>
+ 	   </div>
+ 	   
+ 	   <div id="footer">
+ 	   	<p>Asset Tracker © <%= Time.now.year %> <a href="http://www.openrain.com">OpenRain</a>. All rights reserved.</p>
+ 	   	<p>Record asset metadata with this application for insurance purposes and operational sanity.</p>
+ 	   </div>
 	</div>
+	<div id="content_bottom">&nbsp;</div>
+	
 </div>
 
 </body>

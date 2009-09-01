@@ -3,7 +3,7 @@ class ManufacturersController < ApplicationController
   # GET /manufacturers.xml
   def index
     @manufacturers = Manufacturer.find(:all)
-
+    @manufacturer = Manufacturer.new
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @manufacturers }
@@ -47,9 +47,11 @@ class ManufacturersController < ApplicationController
         flash[:notice] = 'Manufacturer was successfully created.'
         format.html { redirect_to(manufacturers_path) }
         format.xml  { render :xml => @manufacturer, :status => :created, :location => @manufacturer }
+        format.js
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @manufacturer.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -64,9 +66,11 @@ class ManufacturersController < ApplicationController
         flash[:notice] = 'Manufacturer was successfully updated.'
         format.html { redirect_to(manufacturers_path) }
         format.xml  { head :ok }
+        format.js
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @manufacturer.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -80,6 +84,7 @@ class ManufacturersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(manufacturers_url) }
       format.xml  { head :ok }
+      format.js
     end
   end
 end

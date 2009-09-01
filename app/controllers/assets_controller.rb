@@ -1,10 +1,21 @@
 class AssetsController < ApplicationController
 
+  before_filter :setup_check, :only => [:index]
+  
+  def setup_check
+    # TODO Horrible bad way to do this for performance reasons... :()
+     if (User.count == 0 || Manufacturer.count == 0 || Model.count == 0 || Location.count == 0 || Kind.count == 0)
+       redirect_to :controller => :setup, :action => :needed
+     end    
+  end
+  
+  
   # GET /assets
   # GET /assets.xml
   def index
     @assets = Asset.find(:all, :include => [:user, {:model => [:manufacturer, :kind]}])
-
+    @asset = Asset.new
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @assets }
@@ -49,12 +60,15 @@ class AssetsController < ApplicationController
         Notifications.deliver_assigned(@asset)
         format.html { redirect_to(assets_path) }
         format.xml  { render :xml => @asset, :status => :created, :location => @asset }
+        format.js
       else
-        format.html { render :action => "new" }
+        format.html { render :action => :index }
         format.xml  { render :xml => @asset.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
+
 
   # PUT /assets/1
   # PUT /assets/1.xml
@@ -67,9 +81,11 @@ class AssetsController < ApplicationController
         Notifications.deliver_assigned(@asset)
         format.html { redirect_to(assets_path) }
         format.xml  { head :ok }
+        format.js
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @asset.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -77,13 +93,15 @@ class AssetsController < ApplicationController
   # DELETE /assets/1
   # DELETE /assets/1.xml
   def destroy
-    @asset = Asset.find(params[:id])
+    @id = params[:id]
+    @asset = Asset.find(@id)
     @asset.destroy
-    Notifications.deliver_unassigned(@asset)
+    # Notifications.deliver_unassigned(@asset)
 
     respond_to do |format|
       format.html { redirect_to(assets_url) }
       format.xml  { head :ok }
+      format.js
     end
   end
   

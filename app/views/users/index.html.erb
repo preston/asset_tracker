@@ -1,32 +1,40 @@
+<%= button_function :container => 'new_user_container', :text_shown => 'Add', :text_hidden => "Add", :class => 'new_button' %>
+
+
 <div class="explanation">
-	Users generally represent specific people to which assets are assigned, such as "Alice" or "Bob"; however, any email address and unique login will work.
+	<h1><%= @title = 'People.'%></h1>
+	<p>People are responsible for taking care of assets assigned to them. Please use a valid email address and unique name as they will be emailed when assets are assigned and unassigned to them.</p>
 </div>
 
 
-<h1><%= @title = 'Users'%></h1>
+<div id="new_user_container" style="display:none">
+  <div>
+    <% remote_form_for @user do |f| %>
+		<%= render :partial => 'users/fields', :locals => {:f => f}%>
+		<%= button_submit %>
+	<% end %>
+  </div>
+</div>
 
-<%= link_to image_tag('/images/icons/add.png'), new_user_path %>
+
+
+<h2>Here's everyone.</h2>
 
 <table>
 	<thead>
   <tr>
-	<td>Login</td>
+	<td>Name</td>
 	<td>Email</td>
 	<td>Assets</td>
 	<td>Actions</td>
   </tr>
 </thead>
-<tbody>
+<tbody id="users">
 <% for user in @users %>
-  <tr>
-    <td><%= link_to h(user.login), user %></td>
-    <td><%= mail_to user.email %></td>
-    <td><%= user.assets.count %></td>
-    <td>
-	<%= link_to '[new asset]', new_asset_path() %>
-	<%= link_to image_tag('/images/icons/pencil.png'), edit_user_path(user) %>
-<%= link_to image_tag('/images/icons/delete.png'), user, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+	<%= render :partial => 'users/row', :locals => {:user => user} %>
 <% end %>
 </tbody>
 </table>
+
+<p class="count">You have <%= pluralize @users.size, 'person' %>.</p>
+

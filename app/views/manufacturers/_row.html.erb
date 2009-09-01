@@ -1,0 +1,7 @@
+  <tr id="manufacturer_<%= manufacturer.id %>" class="<%= cycle 'odd', 'even' %>">
+    <td><%= link_to h(manufacturer.name), edit_manufacturer_path(manufacturer) %></td>
+    <td><%= manufacturer.models.count %></td>
+    <td>
+<%= link_to image_tag('/images/icons/pencil.png'), edit_manufacturer_path(manufacturer) %>
+<%= link_to_remote image_tag('/images/icons/bin_closed.png'), :url => manufacturer_url(manufacturer), :method => :delete %></td>
+  </tr>

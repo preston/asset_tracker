@@ -1,0 +1,2 @@
+id = 'kind_' + @kind.id.to_s
+page.visual_effect :fade, id

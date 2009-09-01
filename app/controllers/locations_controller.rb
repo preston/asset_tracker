@@ -3,7 +3,7 @@ class LocationsController < ApplicationController
   # GET /locations.xml
   def index
     @locations = Location.find(:all)
-
+    @location = Location.new
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @locations }
@@ -47,9 +47,11 @@ class LocationsController < ApplicationController
         flash[:notice] = 'Location was successfully created.'
         format.html { redirect_to(locations_path) }
         format.xml  { render :xml => @location, :status => :created, :location => @location }
+        format.js
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @location.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -64,9 +66,11 @@ class LocationsController < ApplicationController
         flash[:notice] = 'Location was successfully updated.'
         format.html { redirect_to(locations_path) }
         format.xml  { head :ok }
+        format.js
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @location.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -80,6 +84,7 @@ class LocationsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(locations_url) }
       format.xml  { head :ok }
+      format.js
     end
   end
 end

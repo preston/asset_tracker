@@ -1,9 +1,9 @@
-<h1>New location</h1>
+<h1><%= @title = 'Add Location' %></h1>
 
 <% form_for(@location) do |f| %>
   <%= f.error_messages %>
   <%= render :partial => 'fields', :locals => {:f => f} %>
   <p>
-    <%= f.submit "Create" %>
+    <%= button_submit %>
   </p>
 <% end %>

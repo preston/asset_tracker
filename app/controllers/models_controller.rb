@@ -1,9 +1,21 @@
 class ModelsController < ApplicationController
+  
+  
+  before_filter :setup_check, :only => [:index]
+  
+  def setup_check
+    # TODO Horrible bad way to do this for performance reasons... :(
+     if (Manufacturer.count == 0)
+       redirect_to :controller => :setup, :action => :needed
+     end    
+  end
+  
+  
   # GET /models
   # GET /models.xml
   def index
     @models = Model.find(:all)
-
+    @model = Model.new
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @models }
@@ -47,9 +59,11 @@ class ModelsController < ApplicationController
         flash[:notice] = 'Model was successfully created.'
         format.html { redirect_to(models_path) }
         format.xml  { render :xml => @model, :status => :created, :location => @model }
+        format.js
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @model.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -64,9 +78,11 @@ class ModelsController < ApplicationController
         flash[:notice] = 'Model was successfully updated.'
         format.html { redirect_to(models_path) }
         format.xml  { head :ok }
+        format.js
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @model.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -80,6 +96,7 @@ class ModelsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(models_url) }
       format.xml  { head :ok }
+      format.js
     end
   end
 end

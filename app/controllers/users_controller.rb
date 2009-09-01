@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   # GET /users.xml
   def index
     @users = User.find(:all)
-
+    @user = User.new
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
@@ -47,9 +47,11 @@ class UsersController < ApplicationController
         flash[:notice] = 'User was successfully created.'
         format.html { redirect_to(users_path) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
+        format.js
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -64,9 +66,11 @@ class UsersController < ApplicationController
         flash[:notice] = 'User was successfully updated.'
         format.html { redirect_to(users_path) }
         format.xml  { head :ok }
+        format.js
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -80,6 +84,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(users_url) }
       format.xml  { head :ok }
+      format.js
     end
   end
 end

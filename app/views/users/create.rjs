@@ -1,0 +1,4 @@
+html = render(:partial => 'users/row', :locals => {:user => @user})
+id = "user_" + @user.id.to_s
+page.insert_html :top, 'users', html
+page.visual_effect :highlight, id
