@@ -13,7 +13,7 @@ class AssetsController < ApplicationController
   # GET /assets
   # GET /assets.xml
   def index
-    @assets = Asset.find(:all, :include => [:user, {:model => [:manufacturer, :kind]}])
+    @assets = Asset.find(:all, :include => [:user, {:model => [:manufacturer, :kind]}], :order => 'users.login ASC, manufacturers.name ASC')
     @asset = Asset.new
     
     respond_to do |format|

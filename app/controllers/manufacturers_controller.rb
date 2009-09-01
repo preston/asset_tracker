@@ -1,8 +1,10 @@
 class ManufacturersController < ApplicationController
+  
+  
   # GET /manufacturers
   # GET /manufacturers.xml
   def index
-    @manufacturers = Manufacturer.find(:all)
+    @manufacturers = Manufacturer.find(:all, :order => 'manufacturers.name ASC')
     @manufacturer = Manufacturer.new
     respond_to do |format|
       format.html # index.html.erb

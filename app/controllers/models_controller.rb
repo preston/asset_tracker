@@ -14,7 +14,7 @@ class ModelsController < ApplicationController
   # GET /models
   # GET /models.xml
   def index
-    @models = Model.find(:all)
+    @models = Model.find(:all, :order => 'models.name ASC')
     @model = Model.new
     respond_to do |format|
       format.html # index.html.erb

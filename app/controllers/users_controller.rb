@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
+  
+  
   # GET /users
   # GET /users.xml
   def index
-    @users = User.find(:all)
+    @users = User.find(:all, :order => 'users.login ASC')
     @user = User.new
     respond_to do |format|
       format.html # index.html.erb
