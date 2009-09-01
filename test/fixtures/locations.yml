@@ -2,3 +2,5 @@ conference:
   name: 'Conference Room'
 bullpen:
   name: 'Bullpen'
+storage:
+  name: 'Storage'

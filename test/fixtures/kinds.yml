@@ -2,7 +2,7 @@ laptop:
   name: Laptop
 
 desktop:
-  name: laptop
+  name: Desktop
 
 server:
   name: Server

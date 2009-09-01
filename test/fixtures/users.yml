@@ -1,7 +1,11 @@
 alice:
-  login: alice
+  login: Alice Andersen
   email: support+alice@openrain.com
 
 bob:
-  login: bob
+  login: Bob
   email: support+bob@openrain.com
+  
+charlie:
+  login: Charlie
+  email: support+charlie@openrain.com
